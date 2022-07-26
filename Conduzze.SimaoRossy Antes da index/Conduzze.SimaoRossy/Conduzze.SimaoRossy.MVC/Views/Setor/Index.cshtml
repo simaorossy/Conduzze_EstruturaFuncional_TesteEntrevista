@@ -1,0 +1,75 @@
+﻿@model Conduzze.SimaoRossy.MVC.Models.Dto.SetorDtoo.SetorDto
+@{
+    ViewData["Title"] = "Setor";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Setor</h1>
+</div>
+
+<div class="row justify-content-center">
+
+    <div class="col-11 col-md-10 div-container">
+
+        <div class="col-12 justify-content-end text-right">
+            <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Voltar</a>
+            <a class="btn btn-info" onclick="ModalCriarSetor()">Novo</a>
+        </div>
+        <div class="col-12 div-table">
+            <table class="table table-striped" id="tableSetor">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var setor in Model.Setores)
+                    {
+                        <tr data-idSetor="@setor.Id"> 
+                            <td class="td_nome">@setor.Descricao</td>
+                            <td style="width: 80px;">
+                                <i class="cursor-pointer" onclick='excluirSetor(this)'><img class='icondelete' src='~/Icons/trash-2.svg' /></i>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>       
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_createSetor">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cadastrar Setor</h5>        
+      </div>
+      <div class="modal-body">
+          <input type="hidden" id=ipt_id>
+          <div class="form-group">
+            <label for="ipt_descricao">Descrição</label>
+            <input type="text" class="form-control ipt_required" id="ipt_descricao" placeholder="Digite a descrição">
+            <small id="span_nome" class="d-none form-text text-muted span_alert">Campo descrição obrigatório."</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Divisão</label>
+            <select class="form-select form-control ipt_required" id="slct_estruturaFuncional">
+                <option value="" selected>Selecione uma Divisão</option>
+                 @foreach(var divisao in Model.Divisoes){
+                    <option value="@divisao.Id">@divisao.Descricao</option>
+                 } 
+            </select>
+          </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="ValidarSetor()">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="~/js/Setor.js"></script>

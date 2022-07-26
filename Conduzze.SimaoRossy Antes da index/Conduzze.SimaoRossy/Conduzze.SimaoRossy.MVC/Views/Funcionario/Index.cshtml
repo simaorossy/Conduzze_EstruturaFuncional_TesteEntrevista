@@ -1,0 +1,120 @@
+﻿@model Conduzze.SimaoRossy.MVC.Models.Dto.FuncionarioDto.FuncionarioDto
+@{
+    ViewData["Title"] = "Funcionario";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Funcionario</h1>
+</div>
+
+<div class="row justify-content-center">
+
+    <div class="col-11 col-md-10 div-container">
+
+        
+
+        <div class="col-12 justify-content-end text-right">
+            <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Voltar</a>
+            <a class="btn btn-info" onclick="ModalCriarFuncionario()">Novo</a>
+        </div>
+        <div>                    
+            <div class="form-group mt-4 mb-4">
+            <label for="exampleInputPassword1" style="font-weight:bold">Filtro Por Estrutura</label>
+            <select class="form-select form-control" id="slct_filtroEstruturaFuncional">
+                <option value="" selected>Todos</option>
+                    @foreach(var departamento in Model.Departamentos){
+                    <option value="@departamento.Descricao">@departamento.Descricao</option>
+                    }  
+                    @foreach(var divisao in Model.Divisoes){
+                    <option value="@divisao.Descricao">@divisao.Descricao</option>
+                    } 
+                    @foreach(var setor in Model.setores){
+                    <option value="@setor.Descricao">@setor.Descricao</option>
+                    } 
+            </select>
+            </div>
+        </div>
+
+        <div class="col-12 div-table">
+            <table class="table table-striped" id="tableFuncionario">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Estrutura Funcional</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var funcionario in Model.Funcionarios)
+                    {
+                        <tr data-idFuncionario="@funcionario.Id"> 
+                            <td class="td_nome">@funcionario.Nome</td>
+                            @if(funcionario.Setor != null)
+                            {
+                                <td class="td_estrutura">@funcionario.Departamento.Descricao 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    @funcionario.Divisao?.Descricao
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right " aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    @funcionario.Setor.Descricao</td>
+                            }
+                            else if(funcionario.Divisao != null){
+                                <td class="td_estrutura">@funcionario.Departamento.Descricao  
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right " aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    @funcionario.Divisao.Descricao </td>
+                            }
+                            else
+                            {
+                                <td class="td_estrutura">@funcionario.Departamento.Descricao </td>
+                            }
+
+                            <td style="width: 80px;">
+                                <i class="pointer-event" onclick='editarFuncionario(this)'><img class='iconedit' src='~/Icons/edit-2.svg' /></i>
+                                <i class="cursor-pointer" onclick='excluirFuncionario(this)'><img class='icondelete' src='~/Icons/trash-2.svg' /></i>
+                            </td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        </div>       
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal_createFuncionario">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cadastrar Funcionarios</h5>        
+      </div>
+      <div class="modal-body">
+          <input type="hidden" id=ipt_id>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nome</label>
+            <input type="text" class="form-control ipt_required" id="ipt_nome" placeholder="Digite o nome">
+            <small id="span_nome" class="d-none form-text text-muted span_alert">Campo nome obrigatório."</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Estrutura</label>
+            <select class="form-select form-control ipt_required" id="slct_estruturaFuncional">
+                <option value="" selected>Selecione uma Estrutura</option>
+                 @foreach(var departamento in Model.Departamentos){
+                    <option value="@departamento.Id" data-iddepartamento="@departamento.Id" data-iddivisao="0" data-idsetor="0">Departameto= @departamento.Descricao</option>
+                 }  
+                 @foreach(var divisao in Model.Divisoes){
+                    <option value="@divisao.Id" data-iddepartamento="@divisao.Departamento.Id" data-iddivisao="@divisao.Id" data-idsetor="0">Divisao= @divisao.Descricao</option>
+                 } 
+                 @foreach(var setor in Model.setores){
+                    <option value="@setor.Id" data-iddepartamento="@setor.Divisao.Departamento.Id" data-iddivisao="@setor.Divisao.Id" data-idsetor="@setor.Id">Setor= @setor.Descricao</option>
+                 } 
+            </select>
+          </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="ValidarFuncionario()">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="~/js/Funcionario.js"></script>

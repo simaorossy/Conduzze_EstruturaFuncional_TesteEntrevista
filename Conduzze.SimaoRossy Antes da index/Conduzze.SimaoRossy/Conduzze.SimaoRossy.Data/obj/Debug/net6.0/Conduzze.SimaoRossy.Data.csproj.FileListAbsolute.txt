@@ -1,0 +1,28 @@
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\bin\Debug\net6.0\Conduzze.SimaoRossy.Data.deps.json
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\bin\Debug\net6.0\Conduzze.SimaoRossy.Data.runtimeconfig.json
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\bin\Debug\net6.0\Conduzze.SimaoRossy.Data.dll
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\bin\Debug\net6.0\Conduzze.SimaoRossy.Data.pdb
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.csproj.AssemblyReference.cache
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.AssemblyInfoInputs.cache
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.AssemblyInfo.cs
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.csproj.CoreCompileInputs.cache
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.dll
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\refint\Conduzze.SimaoRossy.Data.dll
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.pdb
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.genruntimeconfig.cache
+C:\Users\simao\source\repos\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\ref\Conduzze.SimaoRossy.Data.dll
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\bin\Debug\net6.0\Conduzze.SimaoRossy.Data.deps.json
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\bin\Debug\net6.0\Conduzze.SimaoRossy.Data.runtimeconfig.json
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\bin\Debug\net6.0\Conduzze.SimaoRossy.Data.dll
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\bin\Debug\net6.0\Conduzze.SimaoRossy.Data.pdb
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.csproj.AssemblyReference.cache
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.AssemblyInfoInputs.cache
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.AssemblyInfo.cs
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.csproj.CoreCompileInputs.cache
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.dll
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\refint\Conduzze.SimaoRossy.Data.dll
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.pdb
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\Conduzze.SimaoRossy.Data.genruntimeconfig.cache
+C:\Users\simao\OneDrive\Área de Trabalho\Conduzze.SimaoRossy Antes da index\Conduzze.SimaoRossy\Conduzze.SimaoRossy.Data\obj\Debug\net6.0\ref\Conduzze.SimaoRossy.Data.dll

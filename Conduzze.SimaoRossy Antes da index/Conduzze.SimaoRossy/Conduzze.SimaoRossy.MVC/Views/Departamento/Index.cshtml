@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Conduzze.SimaoRossy.Data.Model.Departamento>
+@{
+    ViewData["Title"] = "Departamento";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Departamento</h1>
+</div>
+
+<div class="row justify-content-center">
+
+    <div class="col-11 col-md-10 div-container">
+
+        <div class="col-12 justify-content-end text-right">
+            <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Voltar</a>
+            <a class="btn btn-info" onclick="ModalCriarDepartamento()">Novo</a>
+        </div>
+        <div class="col-12 div-table">
+            <table class="table table-striped" id="tableDepartamento">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var departamento in Model)
+                    {
+                        <tr data-idDepartamento="@departamento.Id"> 
+                            <td class="td_nome">@departamento.Descricao</td>
+                            <td style="width: 80px;">
+                                
+                                <i class="cursor-pointer" onclick='excluirDepartamento(this)'><img class='icondelete' src='~/Icons/trash-2.svg' /></i>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>       
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="Modal_CreateDepartamento">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cadastrar Departamento</h5>
+       
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+            <label for="ipt_nome">Descrição</label>
+            <input type="text" class="form-control ipt_required" id="ipt_descricao" placeholder="Digite a descrição">
+            <small id="span_nome" class="d-none form-text text-muted span_alert">Campo descrição obrigatório."</small>
+          </div>        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="ValidarDepartamento()">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="~/js/Departamento.js"></script>
